@@ -564,7 +564,7 @@ body.dark-theme .contact-form input, body.dark-theme .contact-form textarea {
 }
 
 /* Responsividad para Testimonios */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .navbar {
         padding: 1rem 2rem;
     }
@@ -575,9 +575,9 @@ body.dark-theme .contact-form input, body.dark-theme .contact-form textarea {
         width: 250px;
         height: 500px;
         top: 100%;
-        left: 0;
+        /* left: 0; */
         right: 0;
-        background: #D9534F;
+        background: linear-gradient(90deg, #D9534F, #B50510);
         padding: 2rem;
     }
 
@@ -671,4 +671,29 @@ body.dark-theme .contact-form input, body.dark-theme .contact-form textarea {
     .testimonial {
         padding: 1rem;
     }
+}
+
+@media screen and (max-width: 440px) {
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 4rem 3rem;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .about-img {
+        width: 200px
+    }
+
 }
